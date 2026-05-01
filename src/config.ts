@@ -25,7 +25,7 @@ if (process.env.PRICE_SOURCE) {
 }
 
 if (PRICE_SOURCE === PriceSource.coinmarketcap && !PRICE_API_KEY) {
-  throw new Error('api key is required to use conmarketcap')
+  throw new Error('api key is required to use coinmarketcap')
 }
 
 const signatureProvider = new JsSignatureProvider(process.env.PRIVATE_KEYS.split(","));
